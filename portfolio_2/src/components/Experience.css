@@ -1,0 +1,75 @@
+.experience {
+    background-color: var(--bg-color);
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.exp-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.exp-card:last-child {
+    border-bottom: none;
+}
+
+.exp-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.period {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-bottom: 0.8rem;
+}
+
+.exp-info h3 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 0.4rem;
+}
+
+.company {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.exp-points {
+    list-style: none;
+}
+
+.exp-points li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+.exp-points li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .exp-card {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}

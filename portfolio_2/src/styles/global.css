@@ -1,0 +1,84 @@
+:root {
+    --primary-color: #3b82f6;
+    /* Modern Blue */
+    --bg-color: #0b0f19;
+    --text-color: #e2e8f0;
+    --text-secondary: #94a3b8;
+    --card-bg: #161e2d;
+    --accent-color: #60a5fa;
+    --font-main: 'Outfit', 'Inter', system-ui, sans-serif;
+    --code-font: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    padding: 6rem 10%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.025em;
+}
+
+.title {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--accent-color), #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 4rem 6%;
+    }
+}

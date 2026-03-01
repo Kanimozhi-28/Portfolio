@@ -1,0 +1,82 @@
+.contact {
+    background-color: var(--bg-dark);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
+
+.contact-narrative {
+    padding: 3rem;
+}
+
+.contact-narrative h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-narrative p {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    max-width: 600px;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.method {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.method span.mono {
+    font-size: 0.75rem;
+    color: var(--accent-cyan);
+    text-transform: uppercase;
+}
+
+.method .link,
+.method .value {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+}
+
+.method .link:hover {
+    color: var(--accent-cyan);
+}
+
+.contact-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    text-align: center;
+}
+
+.contact-cta p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .contact-narrative,
+    .contact-cta {
+        padding: 2rem;
+    }
+}
